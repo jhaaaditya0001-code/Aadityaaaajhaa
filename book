@@ -1,0 +1,12 @@
+package week7.week7workshop;
+
+
+
+public class book
+
+{
+    String title;
+    String author;
+    double price;
+    
+}
