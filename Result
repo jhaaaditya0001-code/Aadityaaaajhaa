@@ -1,0 +1,34 @@
+package week7.week7workshop;
+
+
+public class Result
+{
+    double sub1;
+    double sub2;
+    double sub3;
+
+    public Result(double s1 , double s2, double s3){
+
+        this.sub1 = s1;
+        this.sub2 = s2;
+        this.sub3 = s3;
+
+    }
+
+    double sum(){
+        return sub1 + sub2 + sub3;
+    }
+
+    double calculatePercent(){
+        return (sum() / 300.0) * 100;
+    }
+
+    void display(){
+        System.out.println("Subject 1 Marks: " + sub1);
+        System.out.println("Subject 2 Marks: " + sub2);
+        System.out.println("Subject 3 Marks: " + sub3);
+        System.out.println("Total Marks: " + sum());
+        System.out.println("Percentage: " + calculatePercent() + "%");
+        System.out.println("-----------------------------");
+    }
+}
