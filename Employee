@@ -1,0 +1,20 @@
+package week7.week7workshop;
+
+public class Employee {
+    int ID;
+    String name;
+    double salary;
+
+    public Employee(int id, String name, double salary) {
+        this.ID = id;      // fixed variable name
+        this.name = name;
+        this.salary = salary;
+    }
+
+    void display() {
+        System.out.println("ID: " + ID);
+        System.out.println("Name: " + name);   // fixed quotes
+        System.out.println("Salary: " + salary);
+        System.out.println("_______");
+    }
+}
