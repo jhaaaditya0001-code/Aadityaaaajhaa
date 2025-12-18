@@ -1,0 +1,14 @@
+package week7.week7workshop;
+
+public class Mobile {
+    String brand;
+    float price;
+
+    void isAffordable() {
+        if (this.price < 2000) {
+            System.out.println(brand + " is affordable");
+        } else {
+            System.out.println(brand + " is not affordable");
+        }
+    }
+}
