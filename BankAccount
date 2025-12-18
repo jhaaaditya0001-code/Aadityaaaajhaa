@@ -1,0 +1,32 @@
+package week7.week7workshop;
+
+
+public class BankAccount {
+    int accountNumber;
+    String holderName;
+    double balance;
+
+    
+    BankAccount(int accountNumber, String holderName, double balance) {
+        this.accountNumber = accountNumber;
+        this.holderName = holderName;
+        this.balance = balance;
+    }
+
+    void deposit(double amount) {
+        balance = balance + amount;
+    }
+
+    void withdraw(double amount) {
+        if (amount <= balance) {
+            balance = balance - amount;
+        } else {
+            System.out.println("Insufficient balance for " + holderName);
+        }
+    }
+
+    void displayBalance() {
+        System.out.println(holderName + "'s Balance: " + balance);
+    }
+}
+
